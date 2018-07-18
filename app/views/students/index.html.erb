@@ -1,4 +1,3 @@
-<%binding.pry%>
 <%@student_search = Student.search('rob')%>
 <%@student_search.each do |student_entry| %>
 <%= render partial: 'form', locals: {student: student_entry} %>
