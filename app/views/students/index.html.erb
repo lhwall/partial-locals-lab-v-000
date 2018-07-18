@@ -1,5 +1,6 @@
-<%#if !!@student_search%>
-<%@student_search = Student.search("rob").first.name.join()%>
+<%binding.pry%>
+<%if !!@student_search%>
 <%@student_search.each do |student_entry| %>
-<%= render partial: 'student', locals: {student: @student_search.first} %>
+<%= render partial: 'form', locals: {student: student_entry} %>
+<%end%>
 <%end%>
