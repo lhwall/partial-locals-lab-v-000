@@ -17,7 +17,7 @@ class Student < ActiveRecord::Base
   def self.search(search_name)
     results = []
     self.all.each do |student|
-      if student.include?(search_name)
+      if student.name.downcase.include?(search_name.downcase)
         results << student
       end
     end
