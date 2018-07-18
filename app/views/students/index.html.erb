@@ -1,4 +1,5 @@
 <%@student_search = Student.search('rob')%>
+<%binding.pry%>
 <%@student_search.each do |student_entry| %>
 <%= render partial: 'student', locals: {student: @student_search.first} %>
 <%end%>
