@@ -1,6 +1,6 @@
 <%binding.pry%>
 <%if !!@students%>
-<%@student_search.each do |student_entry| %>
+<%@students.each do |student_entry| %>
 <%= render partial: 'form', locals: {student: student_entry} %>
 <%end%>
 <%end%>
