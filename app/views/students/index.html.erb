@@ -1,4 +1,3 @@
-<%binding.pry%>
 <%if !!@students%>
 <%@students.each do |student_entry| %>
 <%= render partial: 'form', locals: {student: student_entry} %>
